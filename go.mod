@@ -4,6 +4,10 @@ go 1.18
 
 require (
 	github.com/Shopify/sarama v1.34.1
+	github.com/go-kit/kit v0.9.0
+	github.com/go-kit/log v0.1.0
+	github.com/gofrs/uuid v4.2.0+incompatible
+	github.com/gorilla/mux v1.8.0
 	github.com/segmentio/kafka-go v0.4.32
 	gopkg.in/confluentinc/confluent-kafka-go.v1 v1.8.2
 )
@@ -14,6 +18,7 @@ require (
 	github.com/eapache/go-resiliency v1.2.0 // indirect
 	github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21 // indirect
 	github.com/eapache/queue v1.1.0 // indirect
+	github.com/go-logfmt/logfmt v0.5.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect

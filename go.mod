@@ -2,9 +2,14 @@ module br.com.thyagoluciano.poc
 
 go 1.18
 
-require github.com/Shopify/sarama v1.34.1
+require (
+	github.com/Shopify/sarama v1.34.1
+	github.com/segmentio/kafka-go v0.4.32
+	gopkg.in/confluentinc/confluent-kafka-go.v1 v1.8.2
+)
 
 require (
+	github.com/confluentinc/confluent-kafka-go v1.9.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/eapache/go-resiliency v1.2.0 // indirect
 	github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21 // indirect

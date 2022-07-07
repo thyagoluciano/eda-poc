@@ -1,7 +1,6 @@
 
 ### Scripts Kafka
 
-Stream
 ```
 SET 'auto.offset.reset' = 'earliest';
 ```

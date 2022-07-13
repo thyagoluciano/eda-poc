@@ -1,3 +1,27 @@
+## Setup para usuários de windows
+
+1) Instalar o compilador gcc 64 bits, que é uma dependência da lib  gopkg.in/confluentinc/confluent-kafka-go.v1/kafka utilizado na classe infra\kafka\producer\confluent.go. Sugestão: seguir o manual do site https://www.msys2.org/
+2) Assim que concluído o passo anterior, adicione o caminho da sua instalação conforme exemplo abaixo ao Path das variáveis de ambiente
+    ```
+    C:\msys64\mingw64\bin
+    ```
+3) Execute o comando abaixo para fazer o download de todas as dependências:
+    ```
+    go mod tidy
+    ```
+## Executando o projeto
+1) Todos os containers necessários para a execução do projeto estão no diretório /docker do projeto. Acesse o diretório /docker e suba os containers com o comando:
+    ```
+    docker-compose up
+     ```
+2) Assim que todos os containers estiverem UP, executar o comando abaixo para conectar ao ksqldb e na sequência, executar os scripts da sessão "Scripts Kafka":
+    ```
+    docker exec -it ksqldb-cli ksql http://ksqldb-server:8088
+    ```
+3) Executando os scripts de criação das streams, executar o projeto:
+    ```
+    go run main.go
+    ```
 
 ### Scripts Kafka
 
